@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Subscribe Form</title>
+</head>
+<body>
+    <div class="open">Открыть форму</div>
+    <div class="modal">
+        <div class="form">
+            <form action="">
+                <label for="name" required="required">Полное имя</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email" required="required">E-mail</label>
+                <input type="email" name="email" id="email">
+
+                <label for="password" required="required">Пароль</label>
+                <input type="password" name="password" id="password">
+
+                <button type="button">Подписаться</button>
+            </form>
+        </div>
+
+        <div class="invite">
+            <h3>Подписывайтесь на наш сайт, что бы быть в курсе новых новостей</h3>
+            <div class="nope">
+                Видео выходит каждый день
+            </div>
+            <div class="close" title="close"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        $(".close, .nope").on('click', function () {
+      $('.modal').addClass('hidden');
+      $('.open').addClass('active');
+    })
+    
+    $(".open").on('click', function () {
+      $(this).removeClass('active');
+      $('.modal').removeClass('hidden');
+    })
+        
+        
+    </script>
+
+
+</body>
+</html>
