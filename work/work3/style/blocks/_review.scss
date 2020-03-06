@@ -1,0 +1,89 @@
+.review {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        position: relative;
+        list-style-type: none;
+        width: 25%;
+        height: 50%;
+        padding: 50px 18px;
+        &:nth-child(1) {
+            background: url(../images/review/photo-one.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(2) {
+            background: url(../images/review/photo-two.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(3) {
+            background: url(../images/review/photo-three.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(4) {
+            background: url(../images/review/photo-four.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(5) {
+            background: url(../images/review/photo-five.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(6) {
+            background: url(../images/review/photo-six.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(7) {
+            background: url(../images/review/photo-seven.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:nth-child(8) {
+            background: url(../images/review/photo-eight.jpg) center center / cover no-repeat;
+            background-color: gray;
+            background-blend-mode: luminosity;
+        }
+        &:hover {
+            .review__title {
+                opacity: 1;
+            }
+            .review__text {
+                opacity: 1;
+            }
+            .review__btn {
+                opacity: 1;
+            }
+        }
+    }
+    &__title {
+        position: relative;;
+        font-size: 14px;
+        color: $nav-text;
+        margin-bottom: 32px;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    &__text {
+        font-family: $regular-text-l;
+        color: $nav-text;
+        line-height: 23px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    &__btn {
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+}

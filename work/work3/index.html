@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/Gagalin-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/LifehackMedium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Ubuntu-B.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Ubuntu-Light.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Ubuntu-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Ubuntu-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/layout/normalize.css">
-    <link rel="stylesheet" href="./style/layout/additional.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Бургерная</title>
 </head>
@@ -70,17 +75,17 @@
                     <div class="offer__down">
                         <ul class="offer__list">
                             <li class="offer__item">
-                                <img src="/images/offer/meat.png" alt="offer meat" class="offer__img">
+                                <img src="./images/offer/meat.png" alt="offer meat" class="offer__img">
                                 <div class="offer__title">100% свежее мясо</div>
-                                <div class="offer__desc">рама представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                                <div class="offer__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
                             </li>
                             <li class="offer__item">
-                                <img src="/images/offer/hand.png" alt="offer hand made" class="offer__img">
+                                <img src="./images/offer/hand.png" alt="offer hand made" class="offer__img">
                                 <div class="offer__title">Ручная сборка</div>
                                 <div class="offer__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
                             </li>
                             <li class="offer__item">
-                                <img src="/images/offer/natural.png" alt="offer nature ingredients" class="offer__img">
+                                <img src="./images/offer/natural.png" alt="offer nature ingredients" class="offer__img">
                                 <div class="offer__title">Натуральные ингредиенты</div>
                                 <div class="offer__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
                            </li>
@@ -90,6 +95,89 @@
                 </div>
             </div>
         </section>
+        <section class="section section-three">
+            <div class="container">
+                <div class="slider">
+                    <div class="slider__left">
+                        <div class="slider__img-wrap">
+                            <img src="../work3/images/slider/Бургер+с+чернилами+каракатицы.png" alt="" class="slider__image"></div>
+                    </div>
+                    <div class="slider__right">
+                        <div class="title title--white slider__title">Dark beef burger</div>
+                        <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                        <div class="slider__offer">
+                            <div class="slider__price">
+                                <div class="slider__count">500</div>
+                                <div class="slider__currency">рублей</div>
+                            </div>
+                            <button class="btn btn__primary">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-four">
+            <div class="review">
+                <ul class="review__list">
+                    <li class="review__item">
+                        <div class="title review__title">Анна Полищук</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Константин Спилберг</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Маша Полякова</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Рулон Обоев</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Подрыв Устоев</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Ольга Прохорова</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Разбор Полётов</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                    <li class="review__item">
+                        <div class="title review__title">Рекорд Надоев</div>
+                        <div class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                        <button class="btn btn__secondary review__btn">Подробнее</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="navigation">
+            <div class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"></a></li>
+                </ul>
+            </div>
+            <div class="navigation__arrow"></div>
+        </div>
     </div>
 </body>
 </html>

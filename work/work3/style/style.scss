@@ -1,6 +1,12 @@
-@import url(/style/blocks/header.css);
-@import url(/style/blocks/logo.css);
-@import url(/style/blocks/nav.css);
-@import url(/style/blocks/btn.css);
-@import url(/style/blocks/banner.css);
-@import url(/style/blocks/offer.css);
+@import '../style/layout/additional';
+@import '../style/blocks/variables';
+@import '../style/blocks/header';
+@import '../style/blocks/logo';
+@import '../style/blocks/nav';
+@import '../style/blocks/btn';
+@import '../style/blocks/banner';
+@import '../style/blocks/offer'; 
+@import '../style/blocks/slider'; 
+@import '../style/blocks/review'; 
+@import '../style/blocks/navigation'; 
+

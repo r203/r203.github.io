@@ -1,0 +1,36 @@
+.navigation {
+    &__menu {
+        position: fixed;
+        top: 95px;
+        right: 50px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-bottom: 15px;
+        width: 6px;
+        height: 6px;
+        background-color: $nav-text;
+        border-radius: 50%;
+        &--active:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            border: 1px solid $nav-text;
+            border-radius: 50%;
+        }
+    }
+    &__arrow {
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,31 @@
+.slider {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        margin-bottom: 54px;
+        line-height: 60px;
+    }
+    &__text {
+        color: $nav-text;
+        font-family: $regular-text-l;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__offer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__price {
+        display: flex;
+        align-items: baseline;
+        color: $color-price;
+        font-size: 30px;
+        font-family: $title;
+    }
+    &__count {
+        font-size: 72px;
+    }
+}

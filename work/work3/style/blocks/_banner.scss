@@ -1,0 +1,10 @@
+.banner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    &__text {
+        font-family: 'Lifehack', sans-serif;
+        color: #fff;
+        font-size: 65px;
+    }
+}
