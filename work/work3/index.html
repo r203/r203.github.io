@@ -275,10 +275,78 @@
 
             </div>
         </section>
-        <!-- Секция с доставкой-->
+        <!-- Секция с доставкой и формой-->
         <section class="section section-eight">
-            <div class="delivery">
-
+            <div class="container">
+                <div class="delivery">
+                    <h2 class="title delivery__title">Закажите доставку</h2>
+                    <form class="delivery__form">
+                        <div class="delivery__left">
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Имя</div>
+                                    <input type="text" class="delivery__input">
+                                </label>
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Телефон</div>
+                                    <input type="tel" class="delivery__input">
+                                </label>
+                            </div>
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Улица</div>
+                                    <input type="text" class="delivery__input">
+                                </label>
+                            </div>
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Дом</div>
+                                    <input type="number" class="delivery__input">
+                                </label>
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Корпус</div>
+                                    <input type="text" class="delivery__input">
+                                </label>
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Квартира</div>
+                                    <input type="number" class="delivery__input">
+                                </label>
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Этаж</div>
+                                    <input type="number" class="delivery__input">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="delivery__right">
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Комментарий</div>
+                                    <textarea class="delivery__textarea" type="text" name="text_delivery" placeholder="""></textarea>
+                                </label>
+                            </div>
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Оплата наличными</div>
+                                    <input class="delivery__radio" id="radio1" type="radio" name="delivery" value="cash" checked>
+                                </label>
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Оплата по карте</div>
+                                    <input class="delivery__radio" id="radio2" type="radio" name="delivery" value="card">
+                                </label>
+                            </div>
+                            <div class="delivery__row">
+                                <label class="delivery__block">
+                                    <div class="delivery__subtitle">Не перезванивать</div>
+                                    <input class="delivery__radio" id="checkbox1" type="checkbox" name="delivery" value="no_call" checked>
+                                </label>
+                            </div>
+                            <div class="delivery__row">
+                                    <button type="submit" class="btn btn__primary">Заказать</button>
+                                    <button type="reset" class="btn btn__reset">Очистить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         <!-- Секция карта-->

@@ -201,6 +201,10 @@ p {
   background-color: #171819;
 }
 
+.btn__reset {
+  background-color: transparent;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +478,83 @@ p {
   font-size: 14px;
   color: #fff;
   margin-bottom: 32px;
+}
+
+.delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.delivery__title {
+  margin-bottom: 55px;
+}
+
+.delivery__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delivery__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.delivery__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.delivery__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.delivery__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.delivery__block:last-child {
+  margin-right: 0;
+}
+
+.delivery__subtitle {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.delivery__input {
+  width: 100%;
+  padding: 8px 21px;
+  border: none;
+  border-radius: 4px;
+}
+
+.delivery__textarea {
+  width: 100%;
+  padding: 8px 21px;
+  border: none;
+  border-radius: 4px;
 }
 
 .maps {

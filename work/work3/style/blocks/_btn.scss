@@ -23,4 +23,7 @@
             background-color: darken($btn-color-secondary, 10%);
         }
     }
+    &__reset {
+        background-color: transparent;
+    }
 }
