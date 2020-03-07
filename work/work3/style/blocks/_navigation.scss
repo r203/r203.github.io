@@ -26,11 +26,12 @@
     }
     &__arrow {
         position: fixed;
-        bottom: 40px;
+        bottom: 3%;
         left: 50%;
         width: 40px;
         height: 40px;
         background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
         cursor: pointer;
+        border: none;
     }
 }

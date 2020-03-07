@@ -37,9 +37,11 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 /* Grouping content
@@ -75,6 +77,7 @@ pre {
 
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 /**
