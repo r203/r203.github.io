@@ -1,8 +1,8 @@
 .nav__menu {
     display: flex;
+    margin: 0 15px;
 }
 .nav__item {
-    margin-right: 15px;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -13,6 +13,7 @@
         height: 5px;
         border-radius: 50%;
         background-color: $nav-text;
+        margin-right: 15px;
     }
 }
 .nav__link {
