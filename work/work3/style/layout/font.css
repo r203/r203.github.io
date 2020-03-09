@@ -1,14 +1,14 @@
 @font-face  {
     font-family: "Gagalin-Regular";
-    src : url("../../fonts/Gagalin-Regular.woff2");
+    src : url("../../fonts/Gagalin-Regular.otf");
 }
 @font-face  {
     font-family: "LifehackMedium";
-    src : url("../../fonts/LifehackMedium.woff2");
+    src : url("../../fonts/LifehackMedium.otf");
 }
 @font-face  {
     font-family: "Ubuntu-B";
-    src : url("../../fonts/Ubuntu-B.woff2");
+    src : url("../../fonts/Ubuntu-B.ttf");
 }
 @font-face  {
     font-family: "Ubuntu-Light";
