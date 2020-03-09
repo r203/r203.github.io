@@ -4,6 +4,9 @@
         &--open .accordeon__block{
             height: 100%;
         }
+        &--open .accordeon__title{
+            color: $color-title;
+        }
         &--open .accordeon__title:before{
             transform: rotate(180deg);
         }

@@ -26,12 +26,14 @@
             margin-right: 35px;
         }
     }
+    &__block {
+        margin-top: 35px;
+    }
     &__subtitle {
         margin-bottom: 56px;
         font-family: $title-text;
         font-size: 24px;
         font-weight: bold;
-        margin-top: 35px;
     }
     &__desc {
         font-size: 14px;

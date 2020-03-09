@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url(d:\github\loftschool\github-pages\work\work3\style\layout\font.css);
+/*кнопки*/
+/*шрифты*/
+/*цвета*/
 /* Указываем box sizing */
 *,
 *::before,
@@ -60,6 +64,17 @@ ul {
   background: url(../images/bg/screen-one.webp) center center/cover no-repeat;
 }
 
+.section-one__arrow {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../images/arrow-scroll.svg) center center/contain no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
 .section-two {
   background: url(../images/bg/screen-two.webp) center center/cover no-repeat;
 }
@@ -103,9 +118,6 @@ ul {
   color: #fff;
 }
 
-/*кнопки*/
-/*шрифты*/
-/*цвета*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,12 +298,15 @@ ul {
   margin-right: 35px;
 }
 
+.offer__block {
+  margin-top: 35px;
+}
+
 .offer__subtitle {
   margin-bottom: 56px;
   font-family: "Lifehack", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 35px;
 }
 
 .offer__desc {
@@ -365,6 +380,10 @@ ul {
 
 .accordeon__item--open .accordeon__block {
   height: 100%;
+}
+
+.accordeon__item--open .accordeon__title {
+  color: #f9b43b;
 }
 
 .accordeon__item--open .accordeon__title:before {
@@ -819,16 +838,5 @@ ul {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 50%;
-}
-
-.navigation__arrow {
-  position: fixed;
-  bottom: 3%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  background: url(../images/arrow-scroll.svg) center center/contain no-repeat;
-  cursor: pointer;
-  border: none;
 }
 /*# sourceMappingURL=style.css.map */

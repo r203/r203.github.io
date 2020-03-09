@@ -38,6 +38,16 @@ ul {
 }
 .section-one {
   background: url(../images/bg/screen-one.webp) center center / cover no-repeat;
+  &__arrow {
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
+    cursor: pointer;
+    border: none;
+}
 }
 .section-two {
   background: url(../images/bg/screen-two.webp) center center / cover no-repeat;
