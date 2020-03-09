@@ -6,10 +6,9 @@
     &__right {
         background-color: rgba($color: #2f3234, $alpha: .93);
         width: 50%;
+        padding-top: 100px;
     }
     &__title {
-        font-size: 14px;
-        color: $nav-text;
         margin-bottom: 32px;
     }
 }
