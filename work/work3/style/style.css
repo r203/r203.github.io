@@ -143,6 +143,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin: 0 15px;
+  font-family: "Ubuntu-Medium", sans-serif;
 }
 
 .nav__item {
@@ -601,6 +602,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  font-family: "Ubuntu-Medium", sans-serif;
 }
 
 .delivery__title {
