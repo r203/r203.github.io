@@ -39,7 +39,7 @@ ul {
 .section-one {
   background: url(../images/bg/screen-one.webp) center center / cover no-repeat;
   &__arrow {
-    position: fixed;
+    position: absolute;
     bottom: 3%;
     left: 50%;
     width: 40px;
