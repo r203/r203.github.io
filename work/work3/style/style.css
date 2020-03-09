@@ -549,18 +549,134 @@ ul {
   color: #fff;
 }
 
+.delivery__radiolabel {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
 .delivery__input {
   width: 100%;
   padding: 8px 21px;
   border: none;
   border-radius: 4px;
+  color: #2f3234;
 }
 
 .delivery__textarea {
   width: 100%;
+  height: 111px;
   padding: 8px 21px;
   border: none;
   border-radius: 4px;
+}
+
+.delivery__radio {
+  display: none;
+}
+
+.delivery__radio:checked + .delivery__radiolabel,
+.delivery__radio:not(:checked) + .delivery__radiolabel {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 18px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.delivery__radio:checked + .delivery__radiolabel:before,
+.delivery__radio:not(:checked) + .delivery__radiolabel:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cacaca;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ededed), to(white));
+  background: linear-gradient(0deg, #ededed 0%, white 100%);
+  border-radius: 50%;
+}
+
+.delivery__radio:checked + .delivery__radiolabel:after,
+.delivery__radio:not(:checked) + .delivery__radiolabel:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e45028;
+}
+
+.delivery__radio:checked + .delivery__radiolabel:after {
+  opacity: 1;
+}
+
+.delivery__radio:not(:checked) + .delivery__radiolabel:after {
+  opacity: 0;
+}
+
+.delivery__checklabel {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.delivery__check {
+  display: none;
+}
+
+.delivery__check:checked + .delivery__checklabel,
+.delivery__check:not(:checked) + .delivery__checklabel {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 18px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.delivery__check:checked + .delivery__checklabel:before,
+.delivery__check:not(:checked) + .delivery__checklabel:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cacaca;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ededed), to(white));
+  background: linear-gradient(0deg, #ededed 0%, white 100%);
+}
+
+.delivery__check:checked + .delivery__checklabel:after,
+.delivery__check:not(:checked) + .delivery__checklabel:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 2px;
+  top: 4px;
+  width: 14px;
+  height: 8px;
+  border-radius: 1px;
+  border-left: 4px solid #e45028;
+  border-bottom: 4px solid #e45028;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.delivery__check:checked + .delivery__checklabel:after {
+  opacity: 1;
+}
+
+.delivery__check:not(:checked) + .delivery__checklabel:after {
+  opacity: 0;
 }
 
 .maps {

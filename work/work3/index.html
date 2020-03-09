@@ -292,17 +292,17 @@
                             <div class="delivery__row">
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Имя</div>
-                                    <input type="text" class="delivery__input">
+                                    <input type="text" class="delivery__input" required>
                                 </label>
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Телефон</div>
-                                    <input type="tel" class="delivery__input">
+                                    <input type="tel" class="delivery__input" required>
                                 </label>
                             </div>
                             <div class="delivery__row">
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Улица</div>
-                                    <input type="text" class="delivery__input">
+                                    <input type="text" class="delivery__input" required>
                                 </label>
                             </div>
                             <div class="delivery__row">
@@ -332,20 +332,18 @@
                                 </label>
                             </div>
                             <div class="delivery__row">
-                                <label class="delivery__block">
-                                    <div class="delivery__subtitle">Оплата наличными</div>
+                                <div class="delivery__radiobutton">
                                     <input class="delivery__radio" id="radio1" type="radio" name="delivery" value="cash" checked>
-                                </label>
-                                <label class="delivery__block">
-                                    <div class="delivery__subtitle">Оплата по карте</div>
+                                    <label  class="delivery__radiolabel" for="radio1">Оплата наличными</label>
                                     <input class="delivery__radio" id="radio2" type="radio" name="delivery" value="card">
-                                </label>
+                                    <label  class="delivery__radiolabel" for="radio2">Оплата по карте</label>
+                                </div>
                             </div>
                             <div class="delivery__row">
-                                <label class="delivery__block">
-                                    <div class="delivery__subtitle">Не перезванивать</div>
-                                    <input class="delivery__radio" id="checkbox1" type="checkbox" name="delivery" value="no_call" checked>
-                                </label>
+                                <div class="delivery__checkbox">
+                                    <input class="delivery__check" id="checkbox1" type="checkbox" name="call" value="nocall" checked>
+                                    <label  class="delivery__checklabel" for="checkbox1">Не перезванивать</label>
+                                </div>
                             </div>
                             <div class="delivery__row">
                                     <button type="submit" class="btn btn__primary">Заказать</button>
