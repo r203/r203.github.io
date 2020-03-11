@@ -42,13 +42,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .container {
   width: 940px;
+  margin: 0 auto;
 }
 
 .container--half-side {
@@ -92,6 +90,10 @@ ul {
 }
 
 .section-eight {
+  background: url(../images/bg/screen-eight.webp) center center/cover no-repeat;
+}
+
+.footer {
   background: url(../images/bg/screen-eight.webp) center center/cover no-repeat;
 }
 
@@ -457,6 +459,97 @@ ul {
   padding-right: 200px;
 }
 
+.accordeon-h {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.accordeon-h .accordeon__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordeon-h .accordeon__item:nth-child(1) .accordeon__wrap {
+  background: url("../images/food-menu/1.webp") center center/cover no-repeat;
+}
+
+.accordeon-h .accordeon__item:nth-child(2) .accordeon__wrap {
+  background: url("../images/food-menu/2.webp") center center/cover no-repeat;
+}
+
+.accordeon-h .accordeon__item:nth-child(3) .accordeon__wrap {
+  background: url("../images/food-menu/3.webp") center center/cover no-repeat;
+}
+
+.accordeon-h .accordeon__item--open .accordeon__block {
+  width: 500px;
+}
+
+.accordeon-h .accordeon__item--open .accordeon__title {
+  color: #fff;
+}
+
+.accordeon-h .accordeon__item .accordeon__title {
+  font-size: 40px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding: 28px 18px;
+}
+
+.accordeon-h .accordeon__item .accordeon__title::before {
+  content: none;
+}
+
+.accordeon-h .accordeon__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.accordeon-h .accordeon__wrap:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.accordeon-h .accordeon__block {
+  width: 0;
+  height: 100%;
+}
+
+.accordeon-h .accordeon__desc {
+  padding: 60px 30px;
+}
+
+.food-menu {
+  position: relative;
+  width: 100%;
+}
+
+.food-menu__title {
+  color: #fff;
+  margin-top: 110px;
+  margin-left: 95px;
+}
+
 .review__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,7 +647,7 @@ ul {
   font-family: "Ubuntu-Light", sans-serif;
   color: #fff;
   line-height: 23px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   opacity: 0;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
@@ -799,8 +892,110 @@ ul {
 }
 
 .footer {
-  height: 90px;
   background-color: #000;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.footer__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts {
+  margin: 10px 0;
+}
+
+.contacts__address {
+  color: #fff;
+  font-family: "Ubuntu-Light", sans-serif;
+}
+
+.contacts__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e35028;
+  font-family: "Ubuntu-B", sans-serif;
+  text-decoration: none;
+}
+
+.contacts__link::before {
+  content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  background: url(.././images/contacts/phone.svg) center center/cover no-repeat;
+  margin-right: 5px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+.social__item {
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__icon {
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: .3;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.social__icon:hover {
+  opacity: 1;
 }
 
 .navigation__menu {

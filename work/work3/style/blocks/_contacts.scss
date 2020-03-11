@@ -1,0 +1,22 @@
+.contacts {
+    margin: 10px 0;
+    &__address {
+        color: $nav-text;
+        font-family: $regular-text-l;
+    }
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        color: $color-price;
+        font-family: $regular-text-b;
+        text-decoration: none;
+        &::before {
+            content: '';
+            display: inline-flex;
+            width: 12px;
+            height: 12px;
+            background: url(.././images/contacts/phone.svg) center center / cover no-repeat;
+            margin-right: 5px;
+        }
+    }
+}

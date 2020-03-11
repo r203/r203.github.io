@@ -28,10 +28,11 @@ ul {
   height: 100vh;
   min-height: 650px;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
 }
 .container {
   width: 940px;
+  margin: 0 auto;
   &--half-side {
     padding: 0 95px;
   }
@@ -67,6 +68,9 @@ ul {
     background: url(../images/bg/screen-seven.webp) center center / cover no-repeat;
   }
   .section-eight {
+    background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
+  }
+  .footer {
     background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
   }
   .section-nine {

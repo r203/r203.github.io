@@ -1,0 +1,9 @@
+.food-menu {
+    position: relative;
+    width: 100%;
+    &__title {
+        color: $nav-text;
+        margin-top: 110px;
+        margin-left: 95px;
+    }
+}
