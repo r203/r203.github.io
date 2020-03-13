@@ -1,0 +1,13 @@
+.our-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &__title {
+        color: #2f3234;
+    }
+    &__up {
+        margin-bottom: 4rem;
+    }
+}

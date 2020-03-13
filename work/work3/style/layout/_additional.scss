@@ -4,9 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
-// html {
-//     font-family: 'Roboto', sans-serif;
-// }
+html {
+    font-size: 14px
+}
 img {
   display: block;
 }
@@ -24,7 +24,7 @@ ul {
     flex-direction: column;
 }
 .section {
-  width: 100%;
+  // width: 100vh;
   height: 100vh;
   min-height: 650px;
   display: flex;
@@ -43,11 +43,13 @@ ul {
     position: absolute;
     bottom: 3%;
     left: 50%;
+    transform: translateX(-50%);
     width: 40px;
     height: 40px;
     background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
     cursor: pointer;
     border: none;
+    animation: move 1s ease-out infinite;
 }
 }
 .section-two {
@@ -79,9 +81,41 @@ ul {
 .title {
   font-family: 'Gagalin', sans-serif;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 5.1429rem;
   text-transform: uppercase;
   &--white {
     color: #fff;
   }
 }
+
+@keyframes move {
+  25% {
+  opacity: 1;
+  }
+  67% {
+  opacity: 1;
+  // transform: translateY(15px);
+  bottom: 2.5%;
+  }
+  100% {
+  opacity: 0;
+  bottom: 2%;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      min-width: 680px;
+  }
+    .container {
+      width: 680px;
+    }
+  }
+  @media (max-width: 480px) {
+    .wrapper {
+      min-width: 380px;
+  }
+    .container {
+      width: 440px;
+    }
+  }

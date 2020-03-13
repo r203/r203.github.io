@@ -15,3 +15,12 @@
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .footer {
+        &__container {
+        flex-direction: column;
+        padding: 1.4286rem;
+        }
+    }
+  }

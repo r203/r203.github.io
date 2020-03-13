@@ -2,10 +2,19 @@
     display: flex;
     height: 100%;
     align-items: center;
-    padding-bottom: 94px;
+    padding-bottom: 6.7143rem;
     &__text {
         font-family: 'Lifehack', sans-serif;
         color: #fff;
-        font-size: 65px;
+        font-size: 4.6429rem;
     }
 }
+@media (max-width: 768px) {
+    .banner {
+     flex-direction: column;
+     margin: 0 10%;
+     &__right {
+         text-align: center;
+     }
+    }
+  }

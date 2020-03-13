@@ -6,50 +6,50 @@
     height: 100%;
     font-family: $regular-text-m;
     &__title {
-        margin-bottom: 55px;
+        margin-bottom: 3.9286rem;
     }
     &__form {
         display: flex;
     }
     &__left {
         flex: 1;
-        margin-right: 20px;
+        margin-right: 1.4286rem;
     }
     &__right {
         flex: 1;
     }
     &__row {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 1.4286rem;
     }
     &__block {
         flex: 1;
-        margin-right: 20px;
+        margin-right: 1.4286rem;
         &:last-child {
             margin-right: 0;
         }
     }
     &__subtitle {
-        margin-bottom: 5px;
+        margin-bottom: 0.3571rem;
         color: $nav-text;
     }
     &__radiolabel {
-        margin-bottom: 5px;
+        margin-bottom: 0.3571rem;
         color: $nav-text;
     }
     &__input {
         width: 100%;
-        padding: 8px 21px;
+        padding: 0.5714rem 1.5rem;
         border: none;
-        border-radius: 4px;
+        border-radius: 0.2857rem;
         color: #2f3234;
     }
     &__textarea {
         width: 100%;
-        height: 111px;
-        padding: 8px 21px;
+        height: 7.9286rem;
+        padding: 0.5714rem 1.5rem;
         border: none;
-        border-radius: 4px;
+        border-radius: 0.2857rem;
     }
     &__radio {
         display: none;
@@ -57,9 +57,9 @@
         &:not(:checked) + .delivery__radiolabel {
             display: inline-block;
             position: relative;
-            padding-left: 25px;
-            margin-right: 18px;
-            margin-top: 9px;
+            padding-left: 1.7857rem;
+            margin-right: 1.2857rem;
+            margin-top: 0.6429rem;
             cursor: pointer;
         }
         &:checked + .delivery__radiolabel:before,
@@ -68,8 +68,8 @@
             position: absolute;
             left: 0px;
             top: 0px;
-            width: 18px;
-            height: 18px;
+            width: 1.2857rem;
+            height: 1.2857rem;
             border: 1px solid #cacaca;
             background-color: #ffffff;
             background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%);
@@ -83,10 +83,10 @@
             -moz-transition: all 0.2s ease;
             -o-transition: all 0.2s ease;
             transition: all 0.2s ease;
-            left: 5px;
-            top: 5px;
-            width: 8px;
-            height: 8px;
+            left: 0.3571rem;
+            top: 0.3571rem;
+            width: 0.5714rem;
+            height: 0.5714rem;
             border-radius: 50%;
             background-color: $btn-color-primary;
         }
@@ -107,9 +107,9 @@
         &:not(:checked) + .delivery__checklabel {
             display: inline-block;
             position: relative;
-            padding-left: 25px;
-            margin-right: 18px;
-            margin-top: 9px;
+            padding-left: 1.7857rem;
+            margin-right: 1.2857rem;
+            margin-top: 0.6429rem;
             cursor: pointer;
         }
         &:checked + .delivery__checklabel:before,
@@ -118,8 +118,8 @@
             position: absolute;
             left: 0px;
             top: 0px;
-            width: 18px;
-            height: 18px;
+            width: 1.2857rem;
+            height: 1.2857rem;
             border: 1px solid #cacaca;
             background-color: #ffffff;
             background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%);
@@ -132,10 +132,10 @@
             -moz-transition: all 0.2s ease;
             -o-transition: all 0.2s ease;
             transition: all 0.2s ease;
-            left: 2px;
-            top: 4px;
-            width: 14px;
-            height: 8px;
+            left: 0.1429rem;
+            top: 0.2857rem;
+            width: 1rem;
+            height: 0.5714rem;
             border-radius: 1px;
             border-left: 4px solid $btn-color-primary;
             border-bottom: 4px solid $btn-color-primary;
@@ -150,6 +150,32 @@
         }
         &:not(:checked) + .delivery__checklabel:after {
             opacity: 0;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .delivery {
+        &__form {
+            flex-direction: column;
+            width: 470px;
+        }
+        &__left {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .delivery {
+        &__title {
+            text-align: center;
+        }
+        &__form {
+            width: 100%;
+        }
+        &__row {
+            justify-content: center;
         }
     }
 }

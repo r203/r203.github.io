@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: center;
     &__title {
-        margin-bottom: 54px;
-        line-height: 60px;
+        margin-bottom: 3.8571rem;
+        line-height: 4.2857rem;
     }
     &__text {
         color: $nav-text;
         font-family: $regular-text-l;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.4286rem;
     }
     &__offer {
         display: flex;
@@ -22,10 +22,35 @@
         display: flex;
         align-items: baseline;
         color: $color-price;
-        font-size: 30px;
+        font-size: 2.1429rem;
         font-family: $title;
     }
     &__count {
-        font-size: 72px;
+        font-size: 5.1429rem;
     }
 }
+
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        &__right {
+            margin: 0 10%;
+            text-align: center;
+        }
+        &__offer {
+            justify-content: center;
+        }
+        &__price {
+            margin-right: 1.8571rem;
+        }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .slider {
+        &__title {
+            font-size: 4.2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+  }

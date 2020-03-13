@@ -87,3 +87,50 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .review {
+        &__item {
+            width: 50%;
+            height: 25%;
+            padding: 2.1429rem 1.2857rem;
+            &--open {
+                .review__title {
+                    opacity: 1;
+                }
+                .review__text {
+                    opacity: 1;
+                }
+                .review__btn {
+                    opacity: 1;
+                }
+            }
+        }
+        &__article {
+            text-align: center;
+        }
+        &__title {
+            margin-bottom: 1.7143rem;
+        }
+        &__text {
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.1rem 2.2rem;
+        }
+        &__title {
+            font-size: 1.7143rem;
+        }
+        &__text {
+            display: none;
+        }
+    }
+  }

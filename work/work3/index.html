@@ -73,7 +73,9 @@
                     <div class="offer__down">
                         <ul class="offer__list">
                             <li class="offer__item"> 
-                                <img src="./images/offer/meat.png" alt="offer meat" class="offer__img">
+                                <div class="offer__image-wrap">
+                                    <img src="./images/offer/meat.png" alt="offer meat" class="offer__img">
+                                </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>100% свежее мясо</strong></div>
                                 <div class="offer__desc">
@@ -82,7 +84,9 @@
                                 </div>
                             </li>
                             <li class="offer__item">
-                                <img src="./images/offer/hand.png" alt="offer hand made" class="offer__img">
+                                <div class="offer__image-wrap">
+                                    <img src="./images/offer/hand.png" alt="offer hand" class="offer__img">
+                                </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>Ручная сборка</strong></div>
                                 <div class="offer__desc">
@@ -91,7 +95,9 @@
                                 </div>
                             </li>
                             <li class="offer__item">
-                                <img src="./images/offer/natural.png" alt="offer nature ingredients" class="offer__img">
+                                <div class="offer__image-wrap">
+                                    <img src="./images/offer/natural.png" alt="offer natural" class="offer__img">
+                                </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>Натуральные ингредиенты</strong></div>
                                 <div class="offer__desc">
@@ -134,7 +140,7 @@
             <div class="team">
                 <div class="team__right">
                     <div class="container container--half-side">
-                        <h2 class="title team__title">Наша команда</h2>
+                        <h2 class="title team__title"><span class="team__title--mobile-hide">Наша </span>команда</h2>
                         <ul class="accordeon">
                             <li class="accordeon__item">
                                 <h3 class="title accordeon__title">Дэниэл Редклиф</h3>
@@ -251,7 +257,7 @@
                             <button type="button" class="btn btn__secondary review__btn">Подробнее</button>
                         </article>
                         </li>
-                    <li class="review__item">
+                    <li class="review__item review__item--open">
                         <article class="review__article">
                             <h3 class="title review__title">Константин Спилберг</h3>
                             <blockquote class="review__text">
@@ -319,8 +325,15 @@
         </section>
         <!-- Секция как мы работаем-->
         <section class="section section-seven">
-            <div class="our-work">
-
+            <div class="container">
+                <div class="our-work">
+                    <div class="our-work__up">
+                        <h2 class="title our-work__title">Как мы работаем</h2>
+                    </div>
+                    <div class="our-work__down">
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/s0ZNnkuH1RQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Секция с доставкой и формой-->

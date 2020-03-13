@@ -13,10 +13,19 @@
         &::before {
             content: '';
             display: inline-flex;
-            width: 12px;
-            height: 12px;
+            width: 0.8571rem;
+            height: 0.8571rem;
             background: url(.././images/contacts/phone.svg) center center / cover no-repeat;
-            margin-right: 5px;
+            margin-right: 0.3571rem;
         }
     }
 }
+@media (max-width: 480px) {
+    .contacts {
+        text-align: center;
+        margin-top: 0;
+        &__address {
+            margin-bottom: 0.3571rem;
+        }
+    }
+  }
