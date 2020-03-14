@@ -48,7 +48,12 @@
                                 </li>
                             </ul>
                         </nav>
-                        <button type="button" class="btn btn__primary">Заказать</button>
+                        <div class="header__links">
+                            <button type="button" class="btn btn__primary">Заказать</button>
+                            <a class="hamburger-menu-link" href="">
+                                <div class="hamburger-menu-link__bars"></div>
+                            </a>
+                        </div>
                     </div>
                 </header>
                 <div class="banner">
@@ -466,5 +471,34 @@
             </div>
         </div>
     </footer>
+    <!-- Гамбургер меню -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="hamburger-menu__logo"><a class="logo" href="#"><img src="./images/logo/logo.svg"></a></div>
+        <div class="hamburger-menu__items">
+          <nav class="nav hamburger-menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="1">о нас</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="2">бургеры</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="3">команда</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="4">меню</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="5">отзывы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="" data-scroll-to="7">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a class="hamburger-menu__close" href="#">
+            <div class="hamburger-menu__close-btn">
+                <span class="hamburger-menu__line hamburger-menu__line-1"></span>
+                <span class="hamburger-menu__line hamburger-menu__line-2"></span>
+            </div>
+            <!-- <img src="./images/logo/logo.svg" class="hamburger-menu__image"> -->
+        </a>
+      </div>
 </body>
 </html>

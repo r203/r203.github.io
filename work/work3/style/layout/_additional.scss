@@ -108,7 +108,10 @@ ul {
       min-width: 680px;
   }
     .container {
-      width: 680px;
+      max-width: 95%;
+      &--half-side {
+        padding: 0;
+      }
     }
   }
   @media (max-width: 480px) {
