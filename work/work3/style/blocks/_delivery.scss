@@ -7,6 +7,7 @@
     font-family: $regular-text-m;
     &__title {
         margin-bottom: 3.9286rem;
+        text-align: center;
     }
     &__form {
         display: flex;
@@ -43,6 +44,11 @@
         border: none;
         border-radius: 0.2857rem;
         color: #2f3234;
+        border: 2px solid transparent;
+        &:focus {
+            outline: none;
+            border: 2px solid #f9b43b;
+        }
     }
     &__textarea {
         width: 100%;
@@ -50,6 +56,11 @@
         padding: 0.5714rem 1.5rem;
         border: none;
         border-radius: 0.2857rem;
+        border: 2px solid transparent;
+        &:focus {
+            outline: none;
+            border: 2px solid #f9b43b;
+        }
     }
     &__radio {
         display: none;

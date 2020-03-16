@@ -18,3 +18,12 @@
      }
     }
   }
+
+  @media (max-width: 480px) {
+    .banner {
+        &__text {
+            font-size: 4.1rem;
+        }
+
+    }
+  }

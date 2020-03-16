@@ -79,7 +79,9 @@
                         <ul class="offer__list">
                             <li class="offer__item"> 
                                 <div class="offer__image-wrap">
-                                    <img src="./images/offer/meat.png" alt="offer meat" class="offer__img">
+                                    <svg class="offer__img" style="fill: #e25028">
+                                        <use xlink:href="./images/sprite.svg#meat"></use>
+                                      </svg>
                                 </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>100% свежее мясо</strong></div>
@@ -90,7 +92,9 @@
                             </li>
                             <li class="offer__item">
                                 <div class="offer__image-wrap">
-                                    <img src="./images/offer/hand.png" alt="offer hand" class="offer__img">
+                                    <svg class="offer__img" style="fill: #f8b43a">
+                                        <use xlink:href="./images/sprite.svg#hand"></use>
+                                      </svg>
                                 </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>Ручная сборка</strong></div>
@@ -101,7 +105,9 @@
                             </li>
                             <li class="offer__item">
                                 <div class="offer__image-wrap">
-                                    <img src="./images/offer/natural.png" alt="offer natural" class="offer__img">
+                                    <svg class="offer__img" style="fill: #8ac03e">
+                                        <use xlink:href="./images/sprite.svg#natural"></use>
+                                      </svg>
                                 </div>
                                 <div class="offer__block">
                                     <div class="offer__subtitle"><strong>Натуральные ингредиенты</strong></div>
@@ -144,8 +150,8 @@
         <section class="section section-four">
             <div class="team">
                 <div class="team__right">
-                    <div class="container container--half-side">
-                        <h2 class="title team__title"><span class="team__title--mobile-hide">Наша </span>команда</h2>
+                    <div class="container--half-side">
+                        <h2 class="title team__title">Команда</h2>
                         <ul class="accordeon">
                             <li class="accordeon__item">
                                 <h3 class="title accordeon__title">Дэниэл Редклиф</h3>
@@ -351,34 +357,34 @@
                             <div class="delivery__row">
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Имя</div>
-                                    <input type="text" class="delivery__input" required>
+                                    <input type="text" class="delivery__input" name="name" required>
                                 </label>
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Телефон</div>
-                                    <input type="tel" class="delivery__input" required>
+                                    <input type="tel" class="delivery__input" name="phone" required>
                                 </label>
                             </div>
                             <div class="delivery__row">
                                 <label class="delivery__block">
                                     <div class="delivery__subtitle">Улица</div>
-                                    <input type="text" class="delivery__input" required>
+                                    <input type="text" class="delivery__input" name="street" required>
                                 </label>
                             </div>
                             <div class="delivery__row">
                                 <label class="delivery__block">
-                                    <div class="delivery__subtitle">Дом</div>
+                                    <div class="delivery__subtitle" name="house">Дом</div>
                                     <input type="number" class="delivery__input">
                                 </label>
                                 <label class="delivery__block">
-                                    <div class="delivery__subtitle">Корпус</div>
+                                    <div class="delivery__subtitle" name="building">Корпус</div>
                                     <input type="text" class="delivery__input">
                                 </label>
                                 <label class="delivery__block">
-                                    <div class="delivery__subtitle">Квартира</div>
+                                    <div class="delivery__subtitle" name="flat">Квартира</div>
                                     <input type="number" class="delivery__input">
                                 </label>
                                 <label class="delivery__block">
-                                    <div class="delivery__subtitle">Этаж</div>
+                                    <div class="delivery__subtitle"  name="flour">Этаж</div>
                                     <input type="number" class="delivery__input">
                                 </label>
                             </div>
@@ -418,7 +424,40 @@
             <div class="maps">
                 <iframe class="maps__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b4bbf75fc19d897c7add677e2ccbdf485ac8676c244d6f2785269823413768e&amp;source=constructor" width="681" height="720" frameborder="0"></iframe>
             </div>
-
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__left">
+                        <div class="contacts">
+                            <div class="contacts__address">Санкт-Петербург, ул. Бабушкина, д. 12/1, 15</div>
+                            <div class="contacts__telephone"><a href="tel:+78123771377" class="contacts__link">+7(812)377-13-77</a></div>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <ul class="social">
+                            <li class="social__item">
+                                <a href="vk.com" class="social__link">
+                                    <img src="./images/social/vk.svg" alt="vk.com" class="social__icon">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="instagram.com" class="social__link">
+                                    <img src="./images/social/inst.svg" alt="instagram.com" class="social__icon">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="facebook.com" class="social__link">
+                                    <img src="./images/social/fb.svg" alt="facebook.com" class="social__icon">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="twitter.com" class="social__link">
+                                    <img src="./images/social/twitter.svg" alt="twitter.com" class="social__icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </section>
         <!-- Кнопки навигации и переключения между секциями -->
         <div class="navigation">
@@ -437,40 +476,6 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__left">
-                <div class="contacts">
-                    <div class="contacts__address">Санкт-Петербург, ул. Бабушкина, д. 12/1, 15</div>
-                    <div class="contacts__telephone"><a href="tel:+78123771377" class="contacts__link">+7(812)377-13-77</a></div>
-                </div>
-            </div>
-            <div class="footer__right">
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="vk.com" class="social__link">
-                            <img src="./images/social/vk.svg" alt="vk.com" class="social__icon">
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="instagram.com" class="social__link">
-                            <img src="./images/social/inst.svg" alt="instagram.com" class="social__icon">
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="facebook.com" class="social__link">
-                            <img src="./images/social/fb.svg" alt="facebook.com" class="social__icon">
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="twitter.com" class="social__link">
-                            <img src="./images/social/twitter.svg" alt="twitter.com" class="social__icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
     <!-- Гамбургер меню -->
     <div class="hamburger-menu" id="hamburger-menu">
         <div class="hamburger-menu__logo"><a class="logo" href="#"><img src="./images/logo/logo.svg"></a></div>

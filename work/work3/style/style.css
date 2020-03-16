@@ -28,7 +28,6 @@ ul {
 
 .wrapper {
   overflow: hidden;
-  min-width: 1100px;
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +48,7 @@ ul {
 
 .container {
   width: 940px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -105,6 +105,7 @@ ul {
 }
 
 .section-nine {
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -151,9 +152,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    min-width: 680px;
-  }
   .container {
     max-width: 95%;
   }
@@ -163,9 +161,6 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .wrapper {
-    min-width: 380px;
-  }
   .container {
     width: 440px;
   }
@@ -439,6 +434,12 @@ ul {
   }
 }
 
+@media (max-width: 480px) {
+  .banner__text {
+    font-size: 4.1rem;
+  }
+}
+
 .offer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +509,7 @@ ul {
 .offer__img {
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
 }
 
 .offer__block {
@@ -742,7 +744,6 @@ ul {
   color: #fff;
   font-family: "Ubuntu-Light", sans-serif;
   font-size: 1rem;
-  padding-right: 14.2857rem;
 }
 
 .accordeon-h {
@@ -777,7 +778,7 @@ ul {
 }
 
 .accordeon-h .accordeon__item--open .accordeon__block {
-  width: 35.7143rem;
+  width: 37.1429rem;
 }
 
 .accordeon-h .accordeon__item--open .accordeon__title {
@@ -855,7 +856,7 @@ ul {
     padding: 0 3.5714rem;
   }
   .accordeon-h .accordeon__item--open .accordeon__block {
-    width: 18rem;
+    width: 13rem;
   }
 }
 
@@ -867,8 +868,8 @@ ul {
 .food-menu__title {
   position: absolute;
   color: #fff;
-  top: 5rem;
-  left: 5rem;
+  top: 5%;
+  left: 5%;
 }
 
 @media (max-width: 768px) {
@@ -1120,6 +1121,7 @@ ul {
 
 .delivery__title {
   margin-bottom: 3.9286rem;
+  text-align: center;
 }
 
 .delivery__form {
@@ -1175,6 +1177,12 @@ ul {
   border: none;
   border-radius: 0.2857rem;
   color: #2f3234;
+  border: 2px solid transparent;
+}
+
+.delivery__input:focus {
+  outline: none;
+  border: 2px solid #f9b43b;
 }
 
 .delivery__textarea {
@@ -1183,6 +1191,12 @@ ul {
   padding: 0.5714rem 1.5rem;
   border: none;
   border-radius: 0.2857rem;
+  border: 2px solid transparent;
+}
+
+.delivery__textarea:focus {
+  outline: none;
+  border: 2px solid #f9b43b;
 }
 
 .delivery__radio {
@@ -1340,6 +1354,10 @@ ul {
 
 .footer {
   background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer__container {
