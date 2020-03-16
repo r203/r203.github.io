@@ -9,13 +9,9 @@
         align-items: center;
         height: 100%;
     }
-    &__left {
+    &__col {
         flex: 1;
         color: $nav-text;
-        align-items: center;
-    }
-    &__right {
-        flex: 1;
         align-items: center;
     }
 }

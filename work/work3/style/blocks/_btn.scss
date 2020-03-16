@@ -26,4 +26,7 @@
     &__reset {
         background-color: transparent;
     }
+    &:focus {
+        outline: none;
+    }
 }

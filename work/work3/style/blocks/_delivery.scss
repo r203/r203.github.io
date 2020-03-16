@@ -57,6 +57,7 @@
         border: none;
         border-radius: 0.2857rem;
         border: 2px solid transparent;
+        resize: none;
         &:focus {
             outline: none;
             border: 2px solid #f9b43b;
@@ -79,9 +80,9 @@
             position: absolute;
             left: 0px;
             top: 0px;
-            width: 1.2857rem;
-            height: 1.2857rem;
-            border: 1px solid #cacaca;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #cacaca; 
             background-color: #ffffff;
             background: linear-gradient(0deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%);
             border-radius: 50%;
@@ -94,10 +95,10 @@
             -moz-transition: all 0.2s ease;
             -o-transition: all 0.2s ease;
             transition: all 0.2s ease;
-            left: 0.3571rem;
-            top: 0.3571rem;
-            width: 0.5714rem;
-            height: 0.5714rem;
+            left: 5px;
+            top: 5px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background-color: $btn-color-primary;
         }
