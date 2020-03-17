@@ -60,7 +60,7 @@
 // console.log(obj.lastName);
 // console.log(obj.age);
 
-// obj.occupation = 'FronEnd';
+// obj.occupation = 'FrontEnd';
 // console.log(obj.occupation);
 
 //5.4
@@ -75,7 +75,6 @@
 //     lastName: 'Archenkov',
 //     age: 32,
 // };
-
 
 // let a = hello(obj);
 // console.log(a);
