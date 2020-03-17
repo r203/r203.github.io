@@ -286,6 +286,12 @@ ul {
   outline: none;
 }
 
+@media (max-width: 768px) {
+  .btn__primary--margin {
+    margin-right: 60px;
+  }
+}
+
 .hamburger-menu {
   position: fixed;
   top: 0;

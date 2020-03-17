@@ -30,3 +30,14 @@
         outline: none;
     }
 }
+
+
+@media (max-width: 768px) {
+    .btn {
+        &__primary {
+            &--margin {
+                margin-right: 60px;
+            }
+        }
+    }
+  }
