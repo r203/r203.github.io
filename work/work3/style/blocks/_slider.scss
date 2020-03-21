@@ -1,8 +1,43 @@
 .slider {
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    &__list {
+        display: flex;
+        overflow: hidden;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
+    &__col {
+        width: 50%;
+    }
+    &__burger-part {
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        bottom: 50%;
+        transform: translateX(-50%);
+        width: 2.8571rem;
+        height: 2.8571rem;
+        background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
+        cursor: pointer;
+        border: none;
+        &--left {
+            left: -4%;
+            transform: rotate(90deg);
+        }
+        &--right {
+            right: -4%;
+            transform: rotate(-90deg);
+        }
+    }
     &__title {
         margin-bottom: 3.8571rem;
         line-height: 4.2857rem;
@@ -28,14 +63,21 @@
     &__count {
         font-size: 5.1429rem;
     }
+    &__image {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .slider {
-        flex-direction: column;
-        &__right {
+        &__item {
+            flex-direction: column;
+        }
+        &__col {
             margin: 0 10%;
             text-align: center;
+            width: 100%;
         }
         &__offer {
             justify-content: center;
@@ -51,6 +93,10 @@
         &__title {
             font-size: 4.2rem;
             margin-bottom: 2.5rem;
+        }
+        &__offer {
+            flex-direction: column;
+            align-items: center;
         }
     }
   }

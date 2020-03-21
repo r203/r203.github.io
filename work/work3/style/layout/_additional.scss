@@ -36,7 +36,7 @@ ul {
   max-width: 95%;
   margin: 0 auto;
   &--half-side {
-    padding: 0 95px;
+    padding: 0 6.7857rem;
   }
 }
 .section-one {
@@ -46,8 +46,8 @@ ul {
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
+    width: 2.8571rem;
+    height: 2.8571rem;
     background: url(../images/arrow-scroll.svg) center center / contain no-repeat;
     cursor: pointer;
     border: none;
@@ -58,6 +58,7 @@ ul {
   background: url(../images/bg/screen-two.webp) center center / cover no-repeat;
 }
 .section-three {
+    position: relative;
     background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
     background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
     background-image: linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);

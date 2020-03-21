@@ -1,18 +1,23 @@
 .hamburger-menu {
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	right: auto;
+	bottom: auto;
 	background: rgba(#2f3234, .99);
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
-	display: none;
-	transition: opacity .3s;
+	// display: none;
+	display: flex;
+	opacity: 0;
+	left: -9999px;
+	transition: opacity .2s;
 	&--open {
-		display: flex;
-		opacity: 0;
+		// display: flex;
+		opacity: 1;
+		left: 0;
+		right: 0;
+		bottom: 0;
     }
     &__image {
         max-width: 100%;
@@ -55,8 +60,8 @@
 
 .hamburger-menu__close {
 	position: absolute;
-	right: 15px;
-	top: 15px;
+	right: 30px;
+    top: 38px;
 	width: 18px;
 	height: 18px;
 }
