@@ -1,6 +1,7 @@
 const right = document.querySelector("#right");
 const left = document.querySelector("#left");
 const sliderList = document.querySelector("#sliderList");
+const sliderItem = document.querySelector(".slider__item");
 
 right.addEventListener("click", function(e) {
     loop("right", e);
@@ -13,8 +14,12 @@ right.addEventListener("click", function(e) {
   function loop(direction, e) {
     e.preventDefault();
     if (direction === "right") {
-        sliderList.appendChild(sliderList.firstElementChild);
+          sliderList.appendChild(sliderList.firstElementChild);
     } else {
         sliderList.insertBefore(sliderList.lastElementChild, sliderList.firstElementChild);
     }
   }
+
+  // setInterval(() => {
+  //   sliderList.appendChild(sliderList.firstElementChild);
+  // }, 5000);
