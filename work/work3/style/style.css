@@ -919,7 +919,7 @@ ul {
 }
 
 .accordeon__item--open .accordeon__block {
-  height: 100%;
+  max-height: 200px;
 }
 
 .accordeon__item--open .accordeon__title {
@@ -953,7 +953,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
