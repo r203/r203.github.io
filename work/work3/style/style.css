@@ -631,8 +631,6 @@ ul {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: right 0.3s;
-  transition: right 0.3s;
 }
 
 .slider__item {
@@ -658,7 +656,7 @@ ul {
 
 .slider__arrow {
   position: absolute;
-  bottom: 550%;
+  bottom: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 2.8571rem;
