@@ -156,12 +156,6 @@
         }
     }
     .accordeon-h {
-        transition: transform 1s;
-        .accordeon__item {
-            &--open .accordeon__block{
-                // width: 13rem;
-            }
-        }
-        
+        transition: transform 1s;        
   }
 } 
