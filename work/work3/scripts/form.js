@@ -14,8 +14,14 @@ const deliverySubmit = document.querySelector('#deliverySubmit');
             xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
             xhr.send(formData);
             xhr.addEventListener('load', ()=> {
-                if(xhr.response.status == 1) {
-                    alert ("Письмо отправлено успешно!");
+                if(xhr.response.status) {
+                    reviewTitle = "Заявка";
+                    reviewText = xhr.response.message;
+                    togglePopup(reviewTitle, reviewText);
+                } else {
+                    reviewTitle = "Ошибка";
+                    reviewText = xhr.response.message;
+                    togglePopup(reviewTitle, reviewText);
                 };
             })
         }

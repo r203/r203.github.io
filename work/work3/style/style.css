@@ -1145,15 +1145,15 @@ ul {
 
 @media (max-width: 768px) {
   .food-menu__title {
-    top: 8rem;
+    top: 5%;
     left: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .food-menu__title {
-    top: 8rem;
-    left: 4.2857rem;
+    top: 5%;
+    left: 2rem;
   }
 }
 
