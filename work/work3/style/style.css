@@ -929,7 +929,7 @@ ul {
 }
 
 .accordeon__item--open .accordeon__block {
-  max-height: 200px;
+  max-height: 500px;
 }
 
 .accordeon__item--open .accordeon__title {
@@ -1038,6 +1038,7 @@ ul {
 
 .accordeon-h .accordeon__item--open .accordeon__block {
   width: 37.1429rem;
+  max-height: 100%;
 }
 
 .accordeon-h .accordeon__item--open .accordeon__title {
@@ -1119,6 +1120,8 @@ ul {
   .accordeon__avatar {
     margin-right: 0;
     margin-bottom: 1.7857rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .accordeon__desc {
     padding: 0 3.5714rem;

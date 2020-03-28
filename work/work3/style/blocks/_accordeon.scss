@@ -4,7 +4,7 @@
             margin-bottom: 2.8571rem;
         }
         &--open .accordeon__block{
-            max-height: 200px;
+            max-height: 500px;
 
         }
         &--open .accordeon__title{
@@ -89,6 +89,7 @@
         }
         &--open .accordeon__block{
             width: 37.1429rem;
+            max-height: 100%;
         }
         &--open .accordeon__title{
             color: $nav-text;
@@ -148,6 +149,7 @@
         &__avatar {
             margin-right: 0;
             margin-bottom: 1.7857rem;
+            flex-shrink: 0;
         }
         &__desc {
             padding: 0 3.5714rem;
