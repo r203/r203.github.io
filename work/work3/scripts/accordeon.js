@@ -1,7 +1,7 @@
 function accordionTeam(){
 
-const item = document.querySelectorAll(".accordeon__item");
-const accordeon = document.querySelector(".accordeon");
+const item = document.querySelectorAll(".team .accordeon__item");
+const accordeon = document.querySelector(".team .accordeon");
 
 
 accordeon.addEventListener('click', function(e) {

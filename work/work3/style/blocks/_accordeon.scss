@@ -93,6 +93,11 @@
         &--open .accordeon__title{
             color: $nav-text;
         }
+        &--open .accordeon__desc {
+            opacity: 1;
+            transition: opacity .3s;
+            transition-delay: .9s;
+        }
     }
     .accordeon__title {
         display: block;
@@ -126,6 +131,7 @@
     }
     .accordeon__desc {
         padding: 4.2857rem 2.1429rem;
+        opacity: 0;
     }
 }
 
@@ -148,9 +154,10 @@
         }
     }
     .accordeon-h {
+        transition: transform 1s;
         .accordeon__item {
             &--open .accordeon__block{
-                width: 13rem;
+                // width: 13rem;
             }
         }
         

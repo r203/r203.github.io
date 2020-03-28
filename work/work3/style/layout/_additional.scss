@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html {
-    font-size: 14px
+    font-size: 14px;
 }
 img {
   display: block;
@@ -63,25 +63,25 @@ ul {
     background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
     background-image: linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
   }
-  .section-four {
-    background: url(../images/bg/screen-four.webp) center center / cover no-repeat;
-  }
-  .section-five {
-    background: url(../images/h-slider/photo-one.webp) center center / cover no-repeat;
-  }
-  .section-seven {
-    background: url(../images/bg/screen-seven.webp) center center / cover no-repeat;
-  }
-  .section-eight {
-    background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
-  }
-  .footer {
-    background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
-  }
-  .section-nine {
-    position: relative;
-    flex-direction: column;
-  }
+.section-four {
+  background: url(../images/bg/screen-four.webp) center center / cover no-repeat;
+}
+.section-five {
+  background: url(../images/h-slider/photo-one.webp) center center / cover no-repeat;
+}
+.section-seven {
+  background: url(../images/bg/screen-seven.webp) center center / cover no-repeat;
+}
+.section-eight {
+  background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
+}
+.footer {
+  background: url(../images/bg/screen-eight.webp) center center / cover no-repeat;
+}
+.section-nine {
+  position: relative;
+  flex-direction: column;
+}
 .title {
   font-family: 'Gagalin', sans-serif;
   color: #f9b43b;
@@ -91,6 +91,14 @@ ul {
     color: #fff;
   }
 }
+.error {
+  color: #e45028;
+}
+
+.overflow--hidden {
+  overflow: hidden;
+}
+
 
 @keyframes move {
   25% {
