@@ -8,7 +8,7 @@
         color: #2f3234;
         text-align: center;
     }
-    &__up {
+    &__row:not(:last-child) {
         margin-bottom: 4rem;
     }
 }

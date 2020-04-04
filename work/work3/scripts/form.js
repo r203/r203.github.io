@@ -18,6 +18,7 @@ const deliverySubmit = document.querySelector('#deliverySubmit');
                     reviewTitle = "Заявка";
                     reviewText = xhr.response.message;
                     togglePopup(reviewTitle, reviewText);
+                    deliveryForm.reset();
                 } else {
                     reviewTitle = "Ошибка";
                     reviewText = xhr.response.message;
