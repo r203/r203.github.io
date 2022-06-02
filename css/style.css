@@ -22,10 +22,15 @@ body {
 	flex-direction: column;
 	text-align: center;
 }
+.header-main__wpar {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
 .header-main__subtitle {
 	font-size: 18px;
 	font-weight: 700;
-	padding: 75px 0 0 0;
+	padding: 0;
 }
 .header-main__title {
 	font-size: 48px;
@@ -49,6 +54,58 @@ body {
 .header-main__social a img {
 	filter: invert(1);
 }
+
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.logo__link {
+	font-weight: 900;
+	font-size: 2.25rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+.lang {
+	position: relative;
+}
+
+.lang:before {
+	content: '';
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background: url(/img/lang.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* filter: invert(1); */
+	cursor: pointer;
+}
+
+.lang__list {
+	display: none;
+	margin: 0;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.lang:hover .lang__list {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: #fff;
+}
+
+.lang__item a{
+	color: #1e1e1e;
+	list-style: none;
+	text-decoration: none;
+	font-weight: 900;
+}
+
 .row {
 	margin-bottom: 20px;
 }
